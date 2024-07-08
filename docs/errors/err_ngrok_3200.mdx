@@ -1,14 +1,23 @@
----
-hide_table_of_contents: true
-displayed_sidebar: docs
----
-
-import ErrorDetails from "/src/components/ErrorDetails";
-
-# ERR_NGROK_3200
-
-### Message
-
-Tunnel `HOSTNAME` not found
-
-<ErrorDetails error="err_ngrok_3200" />
+npm create vite@latest./-- --template react
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;npm run devexport default function App() {
+  return (
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
+}
